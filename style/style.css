@@ -1,27 +1,92 @@
 body
 {
     font-family: 'Shrikhand', sans-serif;
-}
-html{
-    color: aqua;
+    margin: 0;
 }
 
-
-
-
+/************************************** MOBILE DISPLAY *************************************************************/
 @media (max-width:768px){
-
+/***************************************Top bloc ***********************************************/
     header{
         display: flex;
-    }
-    #logo {
-        display: flex;
         justify-content: center;
-      }
+    }
 
+    #location
+    {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color:#eaeaea;
+        font-weight: bold;
+        color: rgb(73, 73, 73);
+        height: 50px;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(204, 219, 232) 3px 3px 6px 0px inset;
+  }
+    
+    #location_icon
+    {
+        font-size: 20px;
+        padding-right: 5%;
+    }
+    #explore_describe
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F2F2F2;
+        height:400px;
+    }
+    #describe_top_text
+    {
+        padding-top: 50px;
+        font-size: 30px;
+        font-weight: bold;
 
+    }
+    #describe_top_text span
+    {
+        padding-left: 50px;
+    }
+    #describe_bottom_text
+    {
+        color: grey;
+        font-size: 20px;
+    }
+    #describe_bottom_text span
+    {
+        padding-left: 50px;
+    }
+    #explore_button button
+    {
+        height: 60px;
+        background-image: linear-gradient(to bottom right, #FF79DA, #9356dc);
+        color: white;
+        position: relative;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 60px 60px 60px 60px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 1px 19px 0px #bcbcbc;
+    }
+    #explore_button
+    {
+        padding-bottom: 70px;
+    }
+    #explore_button button:active
+    {
+        box-shadow: 0px 5px 30px 0px #bcbcbc;
+        transform: translateY(1px);
+    }
 
 }
+
+
 
 
 
