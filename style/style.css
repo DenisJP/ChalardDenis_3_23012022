@@ -483,29 +483,16 @@
     }
 }
 /**********************************Heart frames **********************************/
-.fa-heart:hover {
-    -moz-animation: heartfill 2s ease-in-out 0.1s forwards;
-    -moz-transition-timing-function: linear;
-    -webkit-animation: heartfill 2s ease-in-out 0.1s forwards;
-    -webkit-transition-timing-function: linear;
-    animation: heartfill 2s ease-in-out 0.1s forwards;
-    transition-timing-function: linear;
-  }
+.fa-heart{
+    color: #F2F2F2;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
 
-  @keyframes heartfill {
-    0% {
-      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 0;
-    }
-    100% {
-      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 1;
-    }
-  }
+.fa-heart:hover{
+    color: #FF79DA;
+    transition: 1s;
+}
 
 
 /**************************************                 *************************************************************/
@@ -987,42 +974,34 @@
       opacity: 0;
     }
   }
-/**********************************Heart frames **********************************/
-.fa-heart:hover {
-    -moz-animation: heartfill 2s ease-in-out 0.1s forwards;
-    -moz-transition-timing-function: linear;
-    -webkit-animation: heartfill 2s ease-in-out 0.1s forwards;
-    -webkit-transition-timing-function: linear;
-    animation: heartfill 2s ease-in-out 0.1s forwards;
-    transition-timing-function: linear;
-  }
-  @keyframes heartfill {
-    0% {
-      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 0;
-    }
-    100% {
-      background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      opacity: 1;
-    }
-  }
+
 
  /********************************TEST***************************************/
- .overlay {
-    border-radius: 0 20px 20px 0;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #99e2d0;
-    overflow: hidden;
-    width: 0%;
+.menu_container{
+    display: inline;
+    width: 100%;
     height: 100%;
-  }
-  
+}
+
+.overlaySide{
+    height: 20px;
+    width: 30%;
+    background: green;
+}
+
+.restaurant_menu_page:hover .overlaySide{
+    height: 100%;
+    width: 100px;
+    transition: 1s;
+}
+
+.overlaySide i{
+    height: 100%;
+    padding: 10px;
+    left: 0;
+    right: 0;
+}
+
   @keyframes rotate-btn {
     0% {
       transform: rotate(0);
