@@ -354,7 +354,6 @@
         margin-bottom: 10px;
         width: 85%;
         height: 100%;
-        align-items: center;
         background-color: #F2F2F2;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         margin-left: 30px;
@@ -848,7 +847,6 @@
         margin-bottom: 10px;
         width: 85%;
         height: 100%;
-        align-items: center;
         background-color: #F2F2F2;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
         margin-left: 30px;   
@@ -984,14 +982,15 @@
 }
 
 .overlaySide{
-    height: 20px;
-    width: 30%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 0;
     background: green;
+    overflow: hidden;
 }
 
 .restaurant_menu_page:hover .overlaySide{
-    height: 100%;
-    width: 100px;
+    width: 30%;
     transition: 1s;
 }
 
