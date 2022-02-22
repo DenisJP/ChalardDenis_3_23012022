@@ -985,8 +985,10 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 0;
-    background: green;
+    background: #99E2D0;
     overflow: hidden;
+    text-align: center;
+    margin: 0;
 }
 
 .restaurant_menu_page:hover .overlaySide{
@@ -994,36 +996,16 @@
     transition: 1s;
 }
 
-.overlaySide i{
-    height: 100%;
-    padding: 10px;
-    left: 0;
-    right: 0;
+.restaurant_menu_page:hover .fa-solid{
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
-  @keyframes rotate-btn {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
+.overlaySide i{
+    position: relative;
+    color: white;
+    top: 35%;
+    font-size: 30px;
+}
 
-    @keyframes menu_hover{
-        0%{
-            transform: translateX(0)
-        }
-        100%{
-            transform: translateX(-65px);
-        }
-    }
-    .restaurant_menu_page:hover .price{
-        animation: menu_hover .5s forwards 1;
-    }
-    .overlay i:hover {
-        animation: rotate-btn .5s linear 1;
-        -webkit-animation: rotate-btn .5s linear 1;
-        -moz-animation: rotate-btn .5s linear 1;
-      }
 }
