@@ -312,7 +312,11 @@
         vertical-align: middle;
         width: 95%;
     }
-
+    .restaurant_menus_header h1{
+        font-family: "Shrikhand";
+        font-style: italic;
+        font-weight: bolder;
+    }
     .restaurant_menus_header .fa-heart{
         font-size: 25px;
         padding-top: 20px;
@@ -401,6 +405,7 @@
         padding-left: 25px;
         position: relative;
         display: inline-block;
+        
     }
 
     .menu_list h1:after{
