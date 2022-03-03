@@ -332,7 +332,7 @@
         vertical-align: middle;
         width: 95%;
     }
-    .restaurant_menus_header h1{
+    .restaurant_menus_header .menu_title{
         font-family: "Shrikhand";
         font-style: italic;
         font-weight: bolder;
@@ -343,7 +343,7 @@
         padding-right: 15px;
     }
 
-    .restaurant_menus_header h1{
+    .restaurant_menus_header .menu_title{
         padding-left: 25px;
     }
 
@@ -433,7 +433,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .menu_list h1
+    .menu_list .menu_title
     {
         font-size: 18px;
         color: #353434;
@@ -444,7 +444,7 @@
         
     }
 
-    .menu_list h1:after{
+    .menu_list .menu_title:after{
         content:'';
         position: absolute;
         top: 100%;
