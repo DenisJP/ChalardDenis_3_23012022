@@ -1,6 +1,17 @@
+    @font-face{
+        font-family: "Roboto";
+        src: url("./Roboto-Regular.ttf");
+    }
+    @font-face{
+        font-family: 'Shrikhand';
+        src: url("./Shrikhand-Regular.ttf");
+    }
+    *{
+        font-family: 'Roboto';
+    }
     body
     {
-        font-family: 'Shrikhand', sans-serif;
+
         margin: 0;
     }
 /************************************************************       ************************************************************/
@@ -78,6 +89,11 @@
     {
         padding-bottom: 70px;
     }
+    #explore_button button:hover
+    {
+        background-image: linear-gradient(to bottom right, #ff9be3, #a97cdf);
+        box-shadow: 0px 1px 19px 0px #868686;
+    }
     #explore_button button:active
     {
         box-shadow: 0px 5px 30px 0px #bcbcbc;
@@ -108,6 +124,7 @@
         justify-content: space-between;
         height:400px;
     }
+    
     #fonctionnement_title
     {
         padding-left: 20px;
@@ -152,6 +169,9 @@
     .menu:hover
     {
         background-color: #e2cffa;
+    }
+    .menu:hover .fa-store{
+        color: #9356dc;
     }
 
 /*********************Restaurant**********************************/
@@ -489,13 +509,17 @@
 /**********************************Heart frames **********************************/
 .fa-heart{
     color: #F2F2F2;
+    -webkit-background-clip: text;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.37);
 }
 
 .fa-heart:hover{
-    color: #FF79DA;
+    background: linear-gradient(to bottom right, #FF79DA, #9356dc);
     transition: 1s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
 }
 .menu_container{
     display: inline;
@@ -534,8 +558,11 @@
 /**************************************                 *************************************************************/
 /**************************************                 *************************************************************/
 /************************************** MOBILE DISPLAY *************************************************************/
-@media (max-width: 768px){
-/***************************************Top bloc ***********************************************/
+
+
+
+/*@media (max-width: 768px){
+/***************************************Top bloc ***********************************************
     header{
         display: flex;
         justify-content: center;
@@ -613,7 +640,7 @@
         transform: translateY(1px);
     }
 
-/*********************************** Fonctionnement bloc **********************************************************/
+/*********************************** Fonctionnement bloc **********************************************************
 
     .menu
     {
@@ -683,7 +710,7 @@
         background-color: #e2cffa;
     }
 
-    /*********************Restaurant**********************************/
+    /*********************Restaurant**********************************
    .nouveau{
 
        display:flex;
@@ -771,7 +798,7 @@
         font-size: 1.4em;
         color: rgb(255, 255, 255);
       }
-    /*******************************************FOOTER**************************************************/
+    /*******************************************FOOTER**************************************************
     footer {
         width: auto;
         margin-top: 30px;
@@ -802,7 +829,7 @@
     }
 
 
-/********************************Restaurant pages*********************************/
+/********************************Restaurant pages*********************************
     #return_menu
     {
         position:absolute;
@@ -940,7 +967,7 @@
     }
 
 
-/************************FadeIn menu********************************************************/
+/************************FadeIn menu********************************************************
     .restaurant_menu_page
     {
         animation: slideDown 2s;
@@ -962,7 +989,7 @@
             opacity: 1;
         }
     }
-/***************************spin logo***********************************************/
+/***************************spin logo***********************************************
 .loadingspinner {
     position: fixed;
     top: 0;
@@ -1010,7 +1037,7 @@
   }
 
 
- /********************************MENU SLIDE RIGHT***************************************/
+ /********************************MENU SLIDE RIGHT***************************************
 .menu_container{
     display: inline;
     width: 100%;
@@ -1044,4 +1071,5 @@
     font-size: 30px;
 }
 
-}
+
+}*/
