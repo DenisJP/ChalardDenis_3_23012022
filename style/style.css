@@ -429,6 +429,10 @@
         align-items: center;
     
     }
+    .restaurant_menu_page .menu_describe h3{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .menu_list h1
     {
         font-size: 18px;
