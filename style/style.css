@@ -195,6 +195,7 @@
     {
         background-color: #F2F2F2;
         height:100%;
+        
     }
     #restaurant_title
     {
@@ -574,3 +575,10 @@
     font-size: 30px;
 }
 
+@media (min-width:769px){
+
+#fonctionnement_menu{
+    align-items: center;
+}
+
+}
